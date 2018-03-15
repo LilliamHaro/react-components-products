@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SearchBar from './search-bar';
 import ProductTable from './product-table';
 
@@ -18,5 +19,7 @@ const App = () => (
     <ProductTable products={products} />
   </div>
 )
-
+App.propTypes = {
+  products: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired
+}
 export default App

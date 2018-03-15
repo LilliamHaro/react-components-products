@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-class SearchBar extends Component {
-  render() {
-    return (
-        <form className = "form">
+
+const SearchBar = () => (
+  <form className = "form">
           <input type="text" placeholder="Search..." />
           <p>
             <input type="checkbox" />
@@ -11,8 +10,6 @@ class SearchBar extends Component {
             Only show products in stock
           </p>
         </form>
-      );
-  }
-}
+  )
 
 export default SearchBar
